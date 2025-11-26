@@ -1,0 +1,6 @@
+cp source_filename.extension sink_filename.extension: Copy the content of one file to the other.
+mv filename.extension folder_name: To move a file into a folder
+rm filename: Remove files
+rm -rf foldername: Remove folder
+mkdir directory_name: to create folders
+nano filename. To open a file.

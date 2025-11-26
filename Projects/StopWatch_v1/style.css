@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1b1b1b;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+  background: wheat;
+  padding: 30px;
+  width: 600px;
+  height: 600px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#stopwatchDuration {
+  font-size: 60px;
+  color: #1b1b1b;
+  letter-spacing: 2px;
+  border: 1px solid #1b1b1b;
+  border-radius: 10px;
+}
+
+.lapsButtons {
+  display:flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.lapsButtons button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #1b1b1b;
+  color: wheat;
+  font-weight: 500;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  height: 30%;
+  width: 25%;
+}
+
+.lapsButtons button:hover {
+  background: darkkhaki;
+  color: #1b1b1b;
+  border: 1px solid #1b1b1b;
+}
+
+.lapsButtons button:disabled {
+  background: grey;
+  cursor: not-allowed;
+  color: #d3d3d3;
+  border: none;
+}
+
+#laps {
+  height: 400px;
+  padding: 10px;
+  overflow: auto;
+}
+
+#laps li {
+  list-style: none;
+  padding: 8px 12px;
+  color: #1b1b1b;
+  font-weight: 500;
+  font-size: 22px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#laps::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 5px;
+}
+
+#laps::-webkit-scrollbar-thumb {
+  background: transparent;
+  background-color: gray;
+  border-radius: 5px;
+}
+
+#laps::-webkit-scrollbar-thumb:hover {
+  background: darkkhaki;
+}
+
+/* Responsive Design */
+/* Mobile View */
+@media (min-width: 320px) {
+  .container {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+  }
+
+  #stopwatchDuration {
+    font-size: 25px;
+  }
+
+  #laps {
+    height: 150px;
+  }
+  
+  #laps li {
+    font-size: 18px;
+  }
+
+  .lapsButtons button {
+    font-size: 13px;
+    padding: 8px 15px;
+    height: 35%;
+    width: 30%;
+  }
+}
+
+/* Tablet View */
+@media (min-width: 768px) {
+  .container {
+    width: 500px;
+    height: 500px;
+  }
+  
+  #stopwatchDuration {
+    font-size: 40px;
+  }
+
+  #laps {
+    height: 300px;
+  }
+  
+  #laps li {
+    font-size: 20px;
+    padding: 8px 10px;
+  }
+  
+  .lapsButtons button {
+    font-size: 16px;
+    padding: 9px 18px;
+    height: 30%;
+    width: 28%;
+  }
+}
+
+/* Desktop View */
+@media (min-width: 1024px) {
+  .container {
+    width: 600px;
+    height: 600px;
+  }
+  
+  #stopwatchDuration {
+    font-size: 60px;
+  }
+
+  #laps {
+    height: 400px;
+  }
+  
+  #laps li {
+    font-size: 22px;
+    padding: 8px 12px;
+  }
+
+  .lapsButtons button {
+    font-size: 18px;
+    padding: 10px 20px;
+    height: 30%;
+    width: 25%;
+  }
+}

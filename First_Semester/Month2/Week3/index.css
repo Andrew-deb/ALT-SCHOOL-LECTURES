@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    /* padding: 10px; */
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    border: 2px solid black;
+    /* margin: 10px; */
+    /* display: inline-block; */
+}
+
+.box:nth-child(odd) {
+    background-color: lightblue;
+    align-self: start;
+}
+
+.box:hover {
+    background-color: darkgreen;
+    border-color: darkgreen;
+}

@@ -1,0 +1,141 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comic Relief", system-ui;
+}
+
+ul {
+
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    margin-left: 30px;
+}
+
+#list-item-1 {
+    list-style: disc;
+    display: inline-block;
+}
+
+.list-item {
+    list-style: none;
+    display: inline-block;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.logo {
+    display: inline-block;
+    margin-right: 10px;
+    
+}
+
+.container {
+    margin-top: 20px;
+    padding: 0px 30px;
+}
+
+.nav{
+    display: flex;
+    /* border: 1px solid lightgray; */
+}
+
+.heading{
+    margin-top: 50px;
+    padding: 0px 30px;
+}
+
+.paragraph{
+    margin-top: 20px;
+    padding: 0px 30px;
+}
+
+.box-container {
+    display: flex;
+    /* justify-content: space-between;
+    flex-wrap: wrap; */
+}
+
+.box {
+    width: 33.33%;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: lightblue;
+    border-color: black;
+    transition: all 0.3s ease;
+}
+
+/* .grid-container {
+    gap: 10px; 
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: 500px 500px;
+    padding: 20px;
+    row-gap: 10px;
+    background-color: lightgray;
+    height: 100dvh;
+    align-items: end;
+    justify-content: center; 
+    place-content: end;
+}
+
+.grid-item {
+    background-color: lightgreen;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+    height: 100px;
+}
+
+.grid-item:nth-child(1){
+    grid-column: 1 / span 2;
+}
+
+.grid-item:nth-child(4){
+    grid-column-start: 1;
+    grid-column-end: 5;
+} */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 80px calc(100vh - 160px) 80px;
+    grid-template-areas:
+    "sidebar header header"
+    "sidebar main main"
+    "footer footer footer"
+}
+
+.header {
+    grid-area: header;
+    background-color: #999;
+}
+.sidebar {
+    grid-area: sidebar;
+    background-color: darkorange;
+}
+.main {
+    grid-area: main;
+    background-color: lightblue;
+}
+.footer{
+    grid-area: footer;
+    background-color: blanchedalmond;
+}

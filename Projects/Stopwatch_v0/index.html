@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Theme toggle button -->
+        <button id="theme-toggle" class="theme-toggle" type="button">
+            🌙
+        </button>
+    <div class="container">
+        <h1>Stopwatch</h1>
+            <!-- Creating the stopwatch display section -->
+            <div class="outer-circle">
+                <div class="inner-circle">
+                    <div class="stopwatchDuration">
+                        <span class="text hours">00</span><span class="text minutes">:00</span><span class="text seconds">:00</span><span class="text milliseconds">:00</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Creating the buttons section -->
+            <div class="button-wrapper">
+                <button class="lap">lap</button>
+                <button class="start">Start</button>
+                <button class="stop" style="display: none;">Stop</button>
+                <button class="reset">Reset</button>
+            </div>
+
+            <!-- Creating the laps section -->
+            <ul class="laps">
+                <li class="lap-item">
+                    <span class="number">#1</span>
+                    <span>01 : 43 : 09</span>
+                </li>
+
+                <!-- Clear all laps button -->
+                <button class="clear-laps">Clear All</button>
+            </ul>
+    </div>
+    
+
+</body>
+</html>

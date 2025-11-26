@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> JavaScript Tutorial</h1>
+    <script>
+        // alert("Hello World");
+    </script>
+
+    <script>
+        console.log("Hello World");
+        let age = 10;
+
+        if(age > 18){
+            console.log("You can vote");
+        } else {
+            console.log("You cannot vote");
+        }
+
+        let val = undefined;
+        const isfixed = 30;
+
+        // function greet(name){
+        //     console.log("Hello " + name);
+        // }
+        // greet("Alice");
+
+        let car = {
+            name: "BMW",
+            model: "2020",
+            color: "Black"
+        };
+        console.log(car);
+
+
+        let arr = [1, 2, 3, 4, 5];
+        console.log(arr[2]);
+
+
+        let arr_obj = [
+            {name: "Alice", age: 25},
+            {name: "Bob", age: 30}
+        ];
+        console.log(arr_obj[1].name);
+        
+        let age2 = 20;
+        let hasID = true;
+        if(age2 > 18 && hasID){
+            console.log("You can vote");
+        } else {
+            console.log("You cannot vote");
+        }
+
+
+        // Loops
+        for (let i=0; i < 5; i++){
+            console.log(i);
+        }
+
+        let j = 0;
+        while(j < 5){
+            console.log(j);
+            j++;
+        }
+
+        // for of loop
+        let fruits = ["Apple", "Banana", "Mango"];
+        for (let fruit of fruits){
+            console.log('' + fruit);
+        }
+
+        for (let y=0; y< fruits.length; y++){
+            console.log('for' + fruits[y]);
+        }
+
+        // for in loop
+        let person = {
+            name: "Alice",
+            age: 25,
+            city: "New York"
+        };
+
+        for (let key in person){
+            console.log(key + ": " + person[key]);
+        }
+
+
+        // Sum of even numbers from 1 to 100
+
+        let num= 0
+
+        for (let i=1; i<= 100; i++) {
+            if (i % 2 == 0){
+                num +=i;
+            }
+        }
+        console.log(num);
+
+        // Highest number in an array
+        const numbers = [3, 5, 7, 2, 8, -1];
+        let highest = numbers[0];
+
+        for (number of numbers){
+            if (number > highest){
+                highest = number;
+            }
+        }
+        console.log(highest);
+
+        // Highest number with while loop
+        let i= 0;
+
+        while (i < numbers.length){
+
+            const number = numbers[i];
+
+            if (number > highest){
+                highest = number;
+            }
+            i++;
+        }
+        console.log(highest);
+
+        // Arrow function
+        const multiply = (a, b) => a * b;
+        console.log(multiply(5, 10));
+
+        // MultiplyByTen function
+        let MultiplyByTen = (num) => {
+            let multiplier = 10;
+            return num * multiplier;
+        }
+        console.log(MultiplyByTen(5));
+    </script>
+</body>
+</html>
