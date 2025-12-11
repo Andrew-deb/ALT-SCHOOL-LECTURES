@@ -7,6 +7,10 @@ An Iterable is basically a list or array you can iterate over ie a string, list,
 A Generator is a special type of iterable that generates values on the fly and does not store them in memory. They are defined using functions and the 'yield' statement.
 zip function: The zip() function takes iterables (can be zero or more), aggregates them in a tuple, and returns it. It combines multiple iterables (like lists, tuples, strings) element by element into pairs (or tuples).
 
+YIELD VS RETURN:
+- The return statement is used to exit a function and return a value to the caller. When a return statement is executed, the function terminates, and the value is sent back to the caller.
+- The yield statement, on the other hand, is used in a function to make it a generator. When a yield statement is executed, the function's state is saved, and the value is sent back to the caller, but the function does not terminate. Instead, it can be resumed later from where it left off.
+
 We can use the zip function to iterate over multiple iterables in parallel. For instance:
 ```python
 list1 = [1, 2, 3]
@@ -22,3 +26,21 @@ Example of a list comprehension:
 ```python
 squares = [x**2 for x in range(10) if x % 2 == 0]
 ```
+
+OOP Concepts:
+- Class: A blueprint for creating objects (a particular data structure).
+- Object: An instance of a class.
+- Inheritance: A mechanism where a new class can inherit attributes and methods from an existing class.
+- Encapsulation: The bundling of data and methods that operate on that data within one unit, e.g., a class.
+- Polymorphism: The ability to present the same interface for different data types.
+- Abstraction: The concept of hiding the complex implementation details and showing only the essential features of the object.
+- Method Overriding: A feature that allows a subclass to provide a specific implementation of a method that is already defined in its superclass.
+- Method Overloading: A feature that allows a class to have more than one method with the same name, but different parameters (not natively supported in Python, but can be simulated).
+- Constructor: A special method in a class that is called when an object is instantiated. In Python, it is defined using the `__init__` method.
+- Destructor: A special method in a class that is called when an object is about to be destroyed. In Python, it is defined using the `__del__` method.
+- Self: A reference to the current instance of the class, used to access variables and methods associated with the current object. it is the representation of the instance of the class.
+- Class Variable: A variable that is shared among all instances of a class.
+- Instance Variable: A variable that is unique to each instance of a class.
+- Static Method: A method that belongs to the class rather than any object of the class. It does not require a class instance to be called and is defined using the `@staticmethod` decorator.
+- Class Method: A method that is bound to the class and not the instance of the class. It can access class variables and is defined using the `@classmethod` decorator.
+- Abstract Class: A class that cannot be instantiated and is meant to be subclassed. It can contain abstract methods that must be implemented by subclasses. In Python, it is defined using the `abc` module.
