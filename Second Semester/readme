@@ -1,0 +1,24 @@
+Some lecture tips:
+
+Ordered list: Elements can be accessed through indexes eg list, tuples etc.
+Unordered list: Elements can only be acceseed through keys. eg. Dictionary, sets etc.
+An Iterable is basically a list or array you can iterate over ie a string, list, tuples, dictionaries etc.
+
+A Generator is a special type of iterable that generates values on the fly and does not store them in memory. They are defined using functions and the 'yield' statement.
+zip function: The zip() function takes iterables (can be zero or more), aggregates them in a tuple, and returns it. It combines multiple iterables (like lists, tuples, strings) element by element into pairs (or tuples).
+
+We can use the zip function to iterate over multiple iterables in parallel. For instance:
+```python
+list1 = [1, 2, 3]
+list2 = ['a', 'b', 'c']
+res = dict()
+for num, char in zip(list1, list2):
+    res[num] = char # Creating a dictionary from two lists
+print(res)  # Output: {1: 'a', 2: 'b', 3: 'c'}
+```
+
+A Comprehension is a concise way to create lists, sets, or dictionaries using a single line of code. They consist of brackets containing an expression followed by a for clause and optional if clauses.
+Example of a list comprehension:
+```python
+squares = [x**2 for x in range(10) if x % 2 == 0]
+```

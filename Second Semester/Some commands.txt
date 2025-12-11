@@ -1,6 +1,37 @@
+Windows
+
 cp source_filename.extension sink_filename.extension: Copy the content of one file to the other.
 mv filename.extension folder_name: To move a file into a folder
 rm filename: Remove files
 rm -rf foldername: Remove folder
 mkdir directory_name: to create folders
 nano filename. To open a file.
+rmdir /s folder_name (use /s to delete non-empty folders)
+start app_name : To open programs in your system. Only works for application that is path recognizable
+tasklist: Checking for running processes
+ipconfig: Checking IP address
+ping google.com
+
+Useful Commands for MacOS:
+
+cp source_filename.extension sink_filename.extension: Copy the content of one file to another.
+
+mv filename.extension folder_name: Move a file into a folder.
+
+rm filename: Remove files.
+
+rm -rf foldername: Remove a folder (including non-empty folders).
+
+mkdir directory_name: Create folders.
+
+nano filename: Open a file in the Nano text editor (works on macOS if Nano is installed by default).
+
+rmdir folder_name: Remove an empty folder. (Note: Unlike Windows rmdir /s, macOS uses rm -rf folder_name for non-empty folders.)
+
+mkdiropen -a "app_name": To open programs in your system.
+
+ps aux: Checking for running processes
+
+ifconfig: Checking IP address
+
+ping google.com
