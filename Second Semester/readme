@@ -53,3 +53,18 @@ protected: Cab be only be accessed within a child class or withn the class which
 - Abstract Class: A class that cannot be instantiated and is meant to be subclassed. It can contain abstract methods that must be implemented by subclasses. In Python, it is defined using the `abc` module.
 
 
+FASTAPI Basics:
+
+Code review from "https://github.com/Andrew-deb/python_material/blob/master/month2/week2/app_typed.py"
+App initialization:  
+app = FastAPI()  
+This creates the FastAPI instance you’ll use to register routes (endpoints). It’s the central object the server runs and the place you’ll attach path operations.
+
+Pydantic models for data validation and serialization
+
+Very important:
+Client = the consumer of your API (their code depends on your response format).
+
+Client’s code = the actual implementation they wrote to handle your API responses.
+
+Wrapping responses in an object makes your API more future-proof, because you can add fields without breaking existing client code.
