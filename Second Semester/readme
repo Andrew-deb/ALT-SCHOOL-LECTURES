@@ -31,12 +31,19 @@ OOP Concepts:
 - Class: A blueprint for creating objects (a particular data structure).
 - Object: An instance of a class.
 - Inheritance: A mechanism where a new class can inherit attributes and methods from an existing class.
-- Encapsulation: The bundling of data and methods that operate on that data within one unit, e.g., a class.
-- Polymorphism: The ability to present the same interface for different data types.
+- Encapsulation: The bundling of data and methods that operate on that data within one unit, e.g., a class. In essence, it involves wrapping data (attributes) and methods (functions) into a single unit (class), while restricting direct access to some components.
+
+There are three methods for implementing Encapsulation:
+Private: Can only be accessed within the class, mostly by the methnds within that class
+public: Can be acccesse both nside and outsde the class and used by an object.
+protected: Cab be only be accessed within a child class or withn the class which it is declared.
+
+- Polymorphism: The ability to present the same interface for different data types. The ability of different classes to respond to the same method call in different ways.
 - Abstraction: The concept of hiding the complex implementation details and showing only the essential features of the object.
 - Method Overriding: A feature that allows a subclass to provide a specific implementation of a method that is already defined in its superclass.
 - Method Overloading: A feature that allows a class to have more than one method with the same name, but different parameters (not natively supported in Python, but can be simulated).
 - Constructor: A special method in a class that is called when an object is instantiated. In Python, it is defined using the `__init__` method.
+- `__init__` method: The purpose of the `__init__` method is to collect arguments that can be used to update certain attribute of the class.
 - Destructor: A special method in a class that is called when an object is about to be destroyed. In Python, it is defined using the `__del__` method.
 - Self: A reference to the current instance of the class, used to access variables and methods associated with the current object. it is the representation of the instance of the class.
 - Class Variable: A variable that is shared among all instances of a class.
@@ -44,3 +51,5 @@ OOP Concepts:
 - Static Method: A method that belongs to the class rather than any object of the class. It does not require a class instance to be called and is defined using the `@staticmethod` decorator.
 - Class Method: A method that is bound to the class and not the instance of the class. It can access class variables and is defined using the `@classmethod` decorator.
 - Abstract Class: A class that cannot be instantiated and is meant to be subclassed. It can contain abstract methods that must be implemented by subclasses. In Python, it is defined using the `abc` module.
+
+

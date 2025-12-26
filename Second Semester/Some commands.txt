@@ -1,5 +1,6 @@
 Windows
 
+dir: To check the folders or files in your current directory.
 cp source_filename.extension sink_filename.extension: Copy the content of one file to the other.
 mv filename.extension folder_name: To move a file into a folder
 rm filename: Remove files
@@ -13,6 +14,8 @@ ipconfig: Checking IP address
 ping google.com
 
 Useful Commands for MacOS:
+
+ls: To check the folders or files in your current directory.
 
 cp source_filename.extension sink_filename.extension: Copy the content of one file to another.
 
